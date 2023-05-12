@@ -1,22 +1,42 @@
+:root {
+--title-color: #2E2F42;
+--text-color: #434455;
+} 
+
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .header {
-background: #FFFFFF;
+background-color: #FFFFFF;
 
 }
 .hero {
-background: #2E2F42;
+background-color: #2E2F42;
 }
 
 .footer {
-background: #2E2F42;
+background-color: #2E2F42;
 }
 .list {
     list-style: none;
 }
 .link {
     text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 <!-----------------------------HEADER---------------------------->
 
@@ -94,6 +114,7 @@ font-family: 'Raleway', sans-serif;
 .header-address-tel:focus {
     color: #404BBF;
 }
+
 <!--------------------------HERO------------------------>
 
 .hero-title {
@@ -113,17 +134,17 @@ font-family: 'Raleway', sans-serif;
         align-items: center;
         letter-spacing: 0.04em;
         color: #FFFFFF;
-background: #4D5AE5;
+background-color: #4D5AE5;
 cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus{
-    background: #404BBF;
+    background-color: #404BBF;
 }
-<!-----------------------ADVANTAGE---------------------->
- .advantage {}
 
- .advantage-title {}
+<!-----------------------ADVANTAGE---------------------->
+
+ .advantage {}
 
  .advantage-list {}
 
@@ -134,15 +155,16 @@ cursor: pointer;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: var(--title-color);
  }
 
  .advantage-item-text {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--text-color);
  }
+
  <!-------------------PRODUCT----------------------->
  
  .product {}
@@ -153,7 +175,7 @@ cursor: pointer;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        color: #2E2F42;
+        color: var(--title-color);
  }
 
 .product-list {}
@@ -163,7 +185,7 @@ cursor: pointer;
  <!-----------------OUR TEAM----------------------->
  
  .our-team {
-    background: #F4F4FD;
+    background-color: #F4F4FD;
  }
 
  .team {
@@ -172,13 +194,13 @@ font-size: 36px;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--title-color);
  }
 
  .team-list {}
 
  .team-item {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
  }
 
  .team-item-title {
@@ -187,7 +209,7 @@ font-size: 36px;
         line-height: 1.2;
         text-align: center;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: var(--title-color);
  }
 
  .team-item-text {
@@ -195,11 +217,13 @@ font-size: 36px;
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--text-color);
  }
+
  <!------------------FOOTER------------------------>
+
  .footer {
-    background: #2E2F42;
+    background-color: #2E2F42;
  }
 
  .logo-footer-part {
@@ -221,25 +245,29 @@ font-size: 36px;
         letter-spacing: 0.02em;
         color: #F4F4FD;
  }
+
+
 <!--------------------PortfolioPage------------------------------>
-<!----------------------FILTERS------------------------------>
-.filters {
+
+
+<!----------------------EXAMPLES---------------------------->
+.examples {
 
 }
 
-.filters-title {
+.examples-main-title {
        
 }
 
-.filters-btn-list {
+.examples-nav-list {
 
 }
 
-.filters-btn-item {
+.examples-nav-item {
 
 }
-.filters-btn {
-font-family: 'Roboto', sans-serif;
+.examples-nav-btn {
+font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -250,34 +278,29 @@ font-family: 'Roboto', sans-serif;
     color: #4D5AE5;
     cursor: pointer;
 }
-.filters-btn:hover,
-.filters-btn:focus {
+.examples-nav-btn:hover,
+.examples-nav-btn:focus {
     background-color: #404BBF;
     color: #FFFFFF;
 }
-<!----------------------EXAMPLES---------------------------->
-.examples {}
-
-.examples-title {}
 
 .examples-list {}
 
-.examples-item {}
+.examples-item {
+    background-color: #FFFFFF;
+}
 
 .examples-item-title {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: var(--title-color);
 }
 
 .examples-item-text {
-font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
