@@ -3,6 +3,7 @@
 --text-color: #434455;
 --white-color: #FFFFFF;
 --button-background: #F4F4FD;
+--link-hover-color: #404bbf;
 
 } 
 
@@ -86,7 +87,7 @@ font-family: 'Raleway', sans-serif;
 }
 .header-address-mail:hover,
 .header-address-mail:focus {
-    color: #404BBF;
+    color: var(--link-hover-color);
 }
 
 /*--------------------------HERO------------------------*/
